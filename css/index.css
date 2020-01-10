@@ -1,0 +1,427 @@
+
+body {
+    background-color: #00477D;
+    font-family: 'Avenir', sans-serif;
+}
+
+
+/*----- Navigation -----*/ 
+
+nav {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 2px;
+    align-items:baseline;
+    text-align: right;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    cursor: pointer;
+}
+
+.logo {
+    grid-column: 1;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 85px;
+    text-align: left;
+    padding-left: 1em;
+    padding-top: 1em;
+    cursor: pointer;
+    
+}
+
+.1 {
+    grid-column: 2;
+    
+}
+
+.2 { 
+    grid-column: 3;
+    
+}
+
+3. {
+    grid-column: 4;
+    
+}
+
+4. {
+    grid-column: 5;
+}
+
+.navLinks {
+  font-family: 'Avenir light', sans-serif;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.navLinks:hover {
+  color: #0281E0;
+  border-bottom: 1px solid white;
+  padding: 0.3em 0em;
+}
+
+/* -------- Introduction ------*/ 
+
+.container-intro {
+    background-image: url(backimage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    height: 100%;
+    grid-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+        ". h h h h h . . m m m m"
+        ". h h h h h . . m m m m"
+        ". s s s s s . . m m m m"
+        ". . . . . a a a . . . .";
+}
+
+.heading {
+    color: white;
+    font-family: 'Avenir heavy', sans-serif;
+    grid-area: h;
+    text-align: left;
+    font-size: 4em;
+    position: relative;
+    left: 30px;
+    top: 40px;
+}
+
+.subheading {
+    color: white;
+    font-family: 'Avenir medium', sans-serif;
+    grid-area: s;
+    text-align: left;
+    font-size: 1.7em;
+    position: relative;
+    left: 30px;
+    top: -30px;
+}
+
+.mockup1 {
+    grid-area: m;
+    position: relative;
+    top: 100px;
+    right: 150px;
+}
+
+.arrow {
+    grid-area: a;
+    position: relative;
+    left: 70px;
+    top: -20px;
+}
+
+
+/* -------- About ------*/
+
+.container-about {
+    background: white;
+    display: grid;
+    height: 100%;
+    grid-gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+        ". . h h h h h h h h . ."
+        ". s s s s s s s s s s ."
+        ". . . p p p . . . t t t"
+        ". d d w w w . i i b b b"
+        ". . . l l l . . . a a a"
+        ". m m k k k . c c x x x";
+}
+
+.heading2 {
+    color: black;
+    font-family: 'Avenir heavy', sans-serif;
+    grid-area: h;
+    text-align: center;
+    font-size: 3em;
+    position: relative;
+    
+}
+
+.subheading2 {
+    color: black;
+    font-family: 'Avenir light', sans-serif;
+    grid-area: s;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+    top: -40px;
+    
+}
+
+.dumbbell {
+    padding-bottom: 5em;
+    grid-area: d;
+    position: relative;
+    top: -50px;
+    left: -30px;
+}
+
+.ipad {
+    grid-area: i;
+    position: relative;
+    top: -50px;
+    left: -30px;
+}
+
+.mealplan {
+    grid-area: m;
+    position: relative;
+    top: -100px;
+    left: -30px;
+}
+
+.checklist {
+    grid-area: c;
+    position: relative;
+    top: -100px;
+    left: -30px;
+}
+
+.p-workout {
+    color: #0281E0;
+    font-family: 'Avenir heavy', sans-serif;
+    font-size: 1.6em;
+    grid-area: p;
+    position: relative;
+    left: -50px;
+    top: 10px;
+}
+
+.p-workout2 {
+    color: black;
+    font-family: 'Avenir medium', sans-serif;
+    font-size: 1.3em;
+    grid-area: w;
+    position: relative;
+    left: -50px;
+    top: -20px;
+}
+
+.c-mealplans {
+    color: #0281E0;
+    font-family: 'Avenir heavy', sans-serif;
+    font-size: 1.6em;
+    grid-area: l;
+    position: relative;
+    left: -50px;
+    top: -40px;
+}
+
+.c-mealplans2 {
+    color: black;
+    font-family: 'Avenir medium', sans-serif;
+    font-size: 1.3em;
+    grid-area: k;
+    position: relative;
+    left: -50px;
+    top: -70px;
+}
+
+.e-tutorials {
+    color: #0281E0;
+    font-family: 'Avenir heavy', sans-serif;
+    font-size: 1.6em;
+    grid-area: t;
+    position: relative;
+    left: -50px;
+    top: 10px;
+}
+
+.e-tutorials2 {
+    color: black;
+    font-family: 'Avenir medium', sans-serif;
+    font-size: 1.3em;
+    grid-area: b;
+    position: relative;
+    left: -50px;
+    top: -20px;
+}
+
+.accountability {
+    color: #0281E0;
+    font-family: 'Avenir heavy', sans-serif;
+    font-size: 1.6em;
+    grid-area: a;
+    position: relative;
+    left: -50px;
+    top: 10px;
+}
+
+.accountability2 {
+    color: black;
+    font-family: 'Avenir medium', sans-serif;
+    font-size: 1.3em;
+    grid-area: x;
+    position: relative;
+    left: -50px;
+    top: -70px;
+}
+
+
+    /* -------- Review ------*/
+
+.container-review {
+    background: #B8B8B8;
+    height: 250px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+        ". . r r r r r r r r . ."
+        ". . . . m m m m . . . .";      
+}
+
+.reviewquote {
+    grid-area: r;
+    font-family: 'Georgia bold', sans-serif;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    top: 70px;
+}
+
+.menshealth {
+    grid-area: m;
+    font-family: 'Georgia', serif;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    top: 35px;
+}
+
+
+/* -------- Download ------*/
+
+.container-download {
+    background: white;
+    display: grid;
+    height: 100%;
+    grid-gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+        ". . . . . . . . . . . ."
+        ". m m . s s s s s s s ."
+        ". m m . . . t t t t t ."
+        ". m m . . . t t t t t ."
+        ". m m . . . . a a g g ."
+        ". . . . . . . . . p p .";
+}
+
+.mockup2 {
+    grid-area: m;
+    position: relative;
+    top: 50px;
+    left: -30px;
+}
+
+.smarter {
+    grid-area: s;
+    position: relative;
+    top: 20px;
+    left: -30px;
+    color: black;
+    font-family: 'Avenir heavy', sans-serif;
+    font-size: 3.6em;
+    text-align: right;
+
+}
+
+.smarter2 {
+    grid-area: t;
+    position: relative;
+    color: black;
+    font-family: 'Avenir light', sans-serif;
+    font-size: 2em;
+    text-align:right;
+    top: -50px;
+    left: -30px;
+}
+
+.apple {
+    grid-area: a;
+    position: relative;
+    left: -30px;
+    top: -40px;
+}
+
+.google {
+    grid-area: g;
+    position: relative;
+    left: -20px;
+    top: -40px;
+}
+
+.available {
+    grid-area: p;
+    position: relative;
+    top: -50px;
+    left: -20px;
+    font-family: 'Avenir light', sans-serif;
+    color: gray;
+}
+
+
+/* -------- Price Plans ------*/
+
+.container-price {
+    background: #00477D;
+    display: grid;
+    height: 100%;
+    grid-gap: 5px;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-areas: 
+        ". . . . p p p p p p . . . ."
+        ". . . . . t t t t . . . . ."
+        ". f f f f t t t t m m m m ."
+        ". f f f f t t t t m m m m ."
+        ". f f f f t t t t m m m m ."
+        ". . . . . . . . . . . . . .";
+}
+        
+.priceplan {
+    grid-area: p;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Avenir heavy', sans-serif;
+    font-size: 3.6em;
+    text-align: center;
+
+}
+
+.freetrial {
+    grid-area: f;
+    position: relative;
+    right: -20px;
+    top: -70px;
+}
+
+.threemonths {
+    grid-area: t;
+    position: relative;
+    top: -40px;
+}
+
+.twelvemonths {
+    grid-area: m;
+    position: relative;
+    top: -70px;
+    right: -10px;
+}
+
+
+
